@@ -1,0 +1,8 @@
+/* pages/cure/askCure/receiveCure.wxss */
+.content{
+    border:1px black solid;
+    margin: 10px;
+    font-size: 10pt;
+    padding: 2%;
+    height: 200px;
+  }

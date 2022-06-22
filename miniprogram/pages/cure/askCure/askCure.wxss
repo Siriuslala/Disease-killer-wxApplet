@@ -1,0 +1,151 @@
+/* pages/askCure.wxss */
+
+
+    
+    .input{
+    
+    width:85%; /*class为input的组件宽度为父组件的宽度的85%*/
+    
+    }
+    
+    .input-box{
+    width: 280px;
+    border: 1px solid black;  /*给class为input-box的组件加上边框，边框宽度为1px，边框样式为实线，边框颜色为黑色。*/
+    
+    }
+    
+    .checkbox{
+    
+    width:85%;   /*class为checkbox的组件宽度为父组件的宽度的85%*/
+    }
+    
+    .checkbox_hint{
+    
+    margin-bottom:10rpx  /*此组件下方增加80rpx的间隔*/
+    }
+    
+    .button{
+    margin-bottom: 15px;
+    background-color: rgb(42, 212, 108)   /*class为button的组件背景颜色为黄绿色*/ 
+    }
+  
+    .content{
+        border:1px black solid;
+        margin: 10px;
+        font-size: 10pt;
+        padding: 2%;
+      }
+      /* 多行输入 */
+      textarea{
+        border: 1px rgb(7, 7, 7) solid;
+        margin: auto;
+        width:85%;
+        height: 70px;
+        margin-top:5px;
+        padding: 10px;
+      }
+   
+    /* 照片上传 */
+     .pages{
+      width: 98%;
+      overflow: hidden;
+     }
+     .top{
+      width: 100%;
+      overflow: hidden;
+      font-size: 50rpx;
+      border-bottom: 1rpx solid rgba(117, 116, 116, 0.527);
+     }
+     .top_name{
+      margin-left: 20rpx;
+      font-size: 10pt;
+     }
+     /* 图片 */
+     .images_box{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+     }
+     .img-box{
+      border: 5rpx;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.452);
+      width: 200rpx;
+      height: 200rpx;
+      margin-left: 35rpx;
+      margin-top: 20rpx;
+      margin-bottom: 20rpx;
+      position: relative;
+     }
+     /* 删除图片 */
+     .img-delect{
+      width:50rpx;
+      height:50rpx;
+      border-radius:50%;
+      position:absolute;
+      right:-20rpx;
+      top:-20rpx;
+     }
+     .img{
+      width: 50%;
+      height: 50%;
+      margin-top: 23px;
+      margin-left: 23px;
+     }
+     .jiage{
+      height: 60rpx;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      background-color: white;
+      display: flex;
+      justify-content: flex-start;
+     }
+     .rmb{
+      width: 280rpx;
+      border: 2rpx solid rgb(199, 197, 197);
+     }
+    
+     .radio-group{
+      display: flex;
+     }
+     .upload-img-btn{
+      width: 200px;
+      height: 30px;
+      background-color: rgb(205, 221, 64);
+      font-size: 15px;
+      text-align: center;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+    /* .img{
+      display: inline-block;
+    }
+     
+    .pic {
+    float:left;
+    position:relative;
+    margin-right:9px;
+    margin-bottom:9px;
+    }
+     
+    .delete-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+    .upload-img-btn{
+      width: 200px;
+      height: 30px;
+      background-color: rgb(205, 221, 64);
+      font-size: 15px;
+      text-align: center;
+      line-height: 30px;
+    }
+    .weui-uploader{
+      padding: 10rpx;
+    } */

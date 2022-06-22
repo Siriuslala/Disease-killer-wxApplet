@@ -1,0 +1,11 @@
+.skip {
+    margin-top: 10px; 
+    background-color: rgb(16, 206, 158);
+    text-align: center;
+    width: 90%;
+}
+
+swiper{
+    margin-bottom: 50px;
+    height: 180px;  
+}

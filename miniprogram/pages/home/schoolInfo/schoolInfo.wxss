@@ -1,0 +1,8 @@
+/* pages/home/schoolInfo.wxss */
+button {
+    margin-top: 10px; 
+    background-color: rgb(173, 221, 62);
+    text-align: center;
+    width: 90%;
+    font-size: 15px;
+}

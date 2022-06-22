@@ -1,0 +1,75 @@
+<!--pages/askCure.wxml-->
+
+<!-- 火花空间的表单 -->
+    <!-- 外边框 -->
+<view class="content">
+
+<!-- 整体为表单。bindsubmit...的意思是当检测到submit事件的发生时，执行js中的formSubmit函数 -->
+<form bindsubmit="formSubmit">
+
+<view class='form'>
+<view class='input'>
+<view>姓名</view>
+<input name="input_name" value='{{input}}' class='input-box' placeholder="请输入姓名"/>
+<view>性别</view>
+<input name="input_gender" value='{{input}}' class='input-box' placeholder="请输入性别"/>
+<view>年龄</view>
+<input name="input_age" value='{{input}}' class='input-box' placeholder="请输入年龄"/>
+<view>电话</view>
+<input name="input_tel" value='{{input}}' class='input-box' placeholder="请输入电话"/>
+</view>
+
+<!-- 多行输入 -->
+<view>描述一下你的病情</view>
+<view class='textarea'>
+<textarea name="input_text" placeholder="病情描述"/>
+</view>
+
+<!-- 图片上传 -->
+<view class='pages'>
+ <view class='top'><text class='top_name'>病情附图：</text></view>
+ <!-- top就是那条灰色线 -->
+
+ <!-- 图片上传框 -->
+ <view class="images_box">
+  <block wx:key="imgbox" wx:for="{{imgbox}}">
+    <!-- 图片图标 -->
+   <view class='img-box'>
+    <image class='img' src='{{item}}'></image>
+    <!-- 删除图标 -->
+    <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+     <image class='img' src='./images/delect.png'></image>
+    </view>
+
+   </view>
+  </block>
+  <!-- 添加图片图标 -->
+  <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+   <image class='img' src='./images/add_image.png'></image>
+  </view>
+
+ </view>
+ <!-- 上传图片按钮 -->
+ <button class="upload-img-btn" bindtap='fb'>上传图片</button>
+</view>
+
+
+<view>>>>>></view>
+<view>
+<button class='button' formType="submit">{{text}}</button> 
+<!-- 给button组件添加formType属性，值为submit，表示该按钮为提交表单的按钮，点击则提交表单，form表单组件内部所有带name属性的组件的值都会被传递给formSubmit函数。-->
+</view> 
+
+<!-- ************************************ -->
+<!-- 读取医生传回的诊断结果 --> 
+<view>>>>>></view>
+<view>
+<button class='button'  bindtap='goReceive'>诊疗结果</button>
+</view>
+
+
+
+</view>
+</form>
+
+</view>

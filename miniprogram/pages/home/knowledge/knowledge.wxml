@@ -1,0 +1,11 @@
+<!--pages/home/knowledge.wxml-->
+
+<!-- 循环渲染 -->
+<view wx:for="{{data}}"   wx:for-item='knowledge' >
+    <button bindtap="goshowknowledge" data-id="{{knowledge}}"> 
+                 <!-- data-id实现将wxml中的数据传入js文件 -->
+                                {{knowledge}}
+                                </button>
+</view>
+
+

@@ -1,0 +1,12 @@
+<!--pages/category/category.wxml-->
+
+<view>
+    <button class="stu"  bindtap='goStu' 
+    disabled="{{stu_button_state}}">
+    学生问诊 </button>
+
+    <button class="doc"  bindtap='goDoc'
+    disabled="{{doc_button_state}}">
+    医生诊断 </button>
+</view>
+

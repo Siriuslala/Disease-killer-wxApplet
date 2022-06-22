@@ -1,0 +1,8 @@
+<!--pages/cure/askCure/receiveCure.wxml-->
+<view>医生建议如下：</view>
+
+<view class="content">
+<view>建议：</view>
+<view>P.S. {{PSdata}}</view>
+
+</view>

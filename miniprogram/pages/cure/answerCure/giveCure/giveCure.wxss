@@ -1,0 +1,31 @@
+/* pages/cure/answerCure/giveCure.wxss */
+.content{
+    border:1px black solid;
+    margin: 10px;
+    font-size: 10pt;
+    padding: 2%;
+  }
+  textarea{
+    border: 1px rgb(7, 7, 7) solid;
+    margin: auto;
+    width:85%;
+    height: 70px;
+    margin-top:5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .input{
+    
+    width:85%; /*class为input的组件宽度为父组件的宽度的85%*/
+    
+    }
+    
+    .input-box{
+    width: 280px;
+    border: 1px solid black;  
+    }
+
+    .button{
+        margin-top: 20px;
+        background-color: rgb(42, 212, 108)   /*class为button的组件背景颜色为黄绿色*/ 
+        }

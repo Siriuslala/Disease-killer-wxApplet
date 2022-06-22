@@ -1,0 +1,6 @@
+/* pages/answerCure.wxss */
+button{
+    margin-top: 20px;
+    background-color: rgb(58, 216, 105);
+    font-size: 15px;
+}

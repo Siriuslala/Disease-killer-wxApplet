@@ -1,0 +1,6 @@
+<!--pages/info/cart.wxml-->
+<view>您的订单</view>
+<view>药品名：{{data.order_name}}</view>
+<view>购买数量：{{data.order_num}}</view>
+
+

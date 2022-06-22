@@ -1,0 +1,6 @@
+<!--pages/home/health/stayup.wxml-->
+<view class="content">
+<!-- 使用富文本编辑，相应数据库内用html写 -->
+<rich-text nodes = "{{healthContent}}"></rich-text>
+</view>
+

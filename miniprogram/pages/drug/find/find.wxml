@@ -1,0 +1,38 @@
+<!--pages/drug/chaxun/chaxun.wxml-->
+
+
+    <button class="back_button" bindtap='go_back'>返回</button>
+
+
+  <!-- 检索 -->
+  <view class="content">
+  <form bindsubmit="go_search"> <!-- 表单提交时触发函数 -->
+  <view class='form'>
+  <!-- 输入 -->
+    <view class='input'>
+        <input class="input-box" name = "input_drug" value = '{{input}}' placeholder="输入查询药品名称" type="text"/>  
+        <!-- //一定要设置type为文本，不然默认为digit, queryDrug里会报错：regexp must be a string -->
+    </view>
+    
+    <!-- 搜索按钮 -->
+      <view class="button">
+        <button formType="submit">搜索</button>
+      </view>
+            
+          </view>     
+    </form>
+ </view>
+
+<!-- 这种将输入的内容通过表单上传，必须是在form里设置bindsubmit绑定的触发函数; 由于button包含于form, 所以在button里设置formtype为submit -->
+
+<!-- *********************************************************** -->
+<!-- 显示结果 -->
+<!-- 循环渲染 显示检索到的药品，并制成按钮 -->
+<view wx:for="{{drug}}"  wx:for-item="drug" class="tou">
+  <button class="drug_button" 
+          bindtap="go_drug_content"  
+          data-id="{{drug.drugname}}">
+          {{drug.drugname}}</button>
+</view>
+
+

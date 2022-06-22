@@ -1,0 +1,70 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/cure/cure",
+        "pages/drug/drug",
+        "pages/info/info",
+  
+        "pages/home/Ad/Ad",
+        "pages/home/health/health",
+        "pages/home/health/showhealth/showhealth",
+        "pages/home/knowledge/knowledge",
+        "pages/home/knowledge/showknowledge/showknowledge",
+        "pages/home/schoolInfo/schoolInfo",
+        "pages/home/schoolInfo/show_schoolInfo/show_schoolInfo",
+
+        "pages/cure/answerCure/answerCure",
+        "pages/cure/answerCure/giveCure/giveCure",
+        "pages/cure/askCure/askCure",
+        "pages/cure/askCure/receiveCure/receiveCure",
+
+        "pages/drug/drug_content/drug_content",
+        "pages/drug/find/find",
+        "pages/drug/new/new",
+
+        "pages/info/cart/cart",
+        "pages/info/feedback/feedback",
+        "pages/info/user/user",
+        "pages/info/user/register/register"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#f5f5f5",
+        "navigationBarTitleText": "速扫微恙",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#515151",
+        "selectedColor": "#ff6666",
+        "borderStyle": "white",
+        "backgroundColor": "#f5f5f5",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "主页",
+                "iconPath": "images/navigation_homebutton_normal.png",
+                "selectedIconPath": "images/navigation_homebutton_press.png"
+            },
+            {
+                "pagePath": "pages/cure/cure",
+                "text": "线上诊疗",
+                "iconPath": "images/navigation_typebutton_normal.png",
+                "selectedIconPath": "images/navigation_typebutton_press.png"
+            },
+            {
+                "pagePath": "pages/drug/drug",
+                "text": "购药",
+                "iconPath": "images/navigation_cartbutton_normal.png",
+                "selectedIconPath": "images/navigation_cartbutton_press.png"
+            },
+            {
+                "pagePath": "pages/info/info",
+                "text": "个人信息",
+                "iconPath": "images/navigation_userbutton_normal.png",
+                "selectedIconPath": "images/navigation_userbutton_press.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

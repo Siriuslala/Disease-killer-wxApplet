@@ -1,0 +1,6 @@
+<!--pages/home/schoolInfo/426a.wxml-->
+
+<view class="content">
+<!-- 使用富文本编辑，相应数据库内用html写 -->
+<rich-text nodes = "{{schoolInfo}}"></rich-text>
+</view>

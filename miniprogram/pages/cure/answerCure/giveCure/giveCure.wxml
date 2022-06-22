@@ -1,0 +1,35 @@
+<!--pages/cure/answerCure/giveCure.wxml-->
+<view>{{studata.stuName}}同学的情况如下</view>
+<view class="content">
+    <view>姓名：{{studata.stuName}}</view>
+    <view>性别：{{studata.stuGender}}</view>
+    <view>年龄：{{studata.stuAge}}</view>
+    <view>手机：{{studata.stuTel}}</view>
+    <view>病情描述：{{studata.stuWords}}</view>
+    <image src="{{studata.stuPic}}"></image>
+</view>
+
+<!-- 医生填写表单 -->
+<view>诊断结果</view>
+
+<view class="content">
+<form bindsubmit="docSubmit"> 
+
+<view class="form">
+    <view class='textarea'>
+    <textarea placeholder="诊断结果" />
+    </view>
+
+    <view>备注</view>
+    <view class="input">
+    <input name="input_ps" value='{{input}}' class='input-box' placeholder="备注"/>
+    </view>
+
+    <!-- 提交表单 -->
+    <view>
+    <button class='button' formType="submit">提交诊断结果</button>
+    </view>
+</view>
+
+</form>
+</view>

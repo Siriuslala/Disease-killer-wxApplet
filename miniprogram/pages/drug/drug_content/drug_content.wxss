@@ -1,0 +1,12 @@
+/* pages/neirong/neirong.wxss */
+.Button{
+    border: 5rpx solid #ccc;
+    margin: 2rpx;
+    border-radius: 20rpx;
+  }
+  .content{
+    border:1px black solid;
+        margin: 10px;
+        font-size: 10pt;
+        padding: 2%;
+}

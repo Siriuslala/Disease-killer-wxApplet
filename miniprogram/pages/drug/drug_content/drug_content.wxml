@@ -1,0 +1,37 @@
+<!--pages/neirong/neirong.wxml-->
+<!-- 循环渲染显示药品具体信息 -->
+<view class="content">
+    <view>名称: {{data.drugname}}</view>
+    <view>规格: {{data.quality}}</view>
+    <view>型号: {{data.type}}</view>
+    <view>厂家: {{data.factory}}</view>
+    <view>产地: {{data.origin}}</view>
+    <view>单价: {{data.price}}</view>
+    <view>有效期: {{data.expdate}}</view>
+</view>
+
+<!-- 用户购买 -->
+<view>在此键入购买数量</view>
+
+<form bindsubmit="confirm"> <!-- 表单提交时触发函数 -->
+  <view class='form'>
+  <!-- 输入 -->
+    <view class='input'>
+        <input  name = "input_num" value = '{{input}}' placeholder="输入购买数量" />  
+    </view>  
+    <!-- 确认购买按钮 -->
+    <view class="button">
+    <button formType="submit"  disabled="{{confirm_button_state}}">确认购买</button>   
+    </view>   
+
+   </view>     
+</form>
+ 
+ <!-- 生成二维码 -->
+ <view>支付后生成取药码，请妥善保存</view>
+<view style="text-align:center;">
+    <image style="width:500rpx;height:500rpx;" src="{{ QrCodeURL }}" ></image>
+</view>
+ 
+
+

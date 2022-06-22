@@ -1,0 +1,32 @@
+<!--pages/xinjian/xinjian.wxml-->
+
+<view class="content">
+<form bindsubmit="save"> <!-- 表单提交时触发save函数 -->
+<view class='form'>
+
+<view class='input'>
+<view>药品名称</view>
+<input name="input_drugname" value='{{input}}' class='input-box' placeholder="请输入药品名称"/>
+<view>规格</view>
+<input name="input_quality" value='{{input}}' class='input-box' placeholder="请输入规格"/>
+<view>型号</view>
+<input name="input_type" value='{{input}}' class='input-box' placeholder="请输入型号"/>
+<view>厂家</view>
+<input name="input_factory" value='{{input}}' class='input-box' placeholder="请输入厂家"/>
+<view>产地</view>
+<input name="input_origin" value='{{input}}' class='input-box' placeholder="请输入产地"/>
+<view>单价</view>
+<input name="input_price" value='{{input}}' class='input-box' placeholder="请输入单价"/>
+<view>有效期</view>
+<input name="input_expdate" value='{{input}}' class='input-box' placeholder="请输入有效期"/>
+</view>
+  <!-- 保存按钮 -->
+        <view class="button">
+        <button formType="submit">保存
+        </button>
+        </view>
+        
+      </view>     
+</form>
+
+</view>

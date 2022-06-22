@@ -1,0 +1,28 @@
+/* pages/category/category.wxss */
+
+
+.stu{
+    height: 160px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    background-color: rgb(139, 197, 31); 
+    width: 90%;
+    /* 文字 */
+    color:ivory;
+    line-height: 160px; /*文字高和button高设置为相同，则竖直方向居中*/
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.doc{
+    height: 160px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    background-color: rgb(193, 132, 250); 
+    width: 90%;
+    /* 文字 */
+    color:ivory;
+    line-height: 160px;
+    font-size: 25px;
+    font-weight: 550;
+}

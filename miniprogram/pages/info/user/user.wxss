@@ -1,0 +1,27 @@
+/* pages/info/user.wxss */
+
+.input{
+    
+    width:85%; /*class为input的组件宽度为父组件的宽度的85%*/
+    margin-bottom: 20px;
+    }
+    
+    .input-box{
+    width: 280px;
+    border: 1px solid black;  /*给class为input-box的组件加上边框，边框宽度为1px，边框样式为实线，边框颜色为黑色。*/
+    
+    }
+    .button{
+        margin-bottom: 15px;
+        background-color: rgb(16, 206, 158);  /*class为button的组件背景颜色为黄绿色*/ 
+        }
+    .register_button{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color:rgb(16, 206, 158);
+    }
+        .content{
+            margin: 10px;
+            font-size: 10pt;
+            padding: 2%;
+          }

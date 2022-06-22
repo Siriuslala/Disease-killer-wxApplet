@@ -1,0 +1,24 @@
+<!--pages/info/feedback.wxml-->
+<view>请输入反馈</view>
+
+<view class="content">
+
+<form bindsubmit="formSubmit">
+
+<view class='form'>
+
+
+<!-- 多行输入 -->
+<view class='textarea'>
+<textarea name="input_text" placeholder="反馈意见"/>
+</view>
+
+
+<button formType="submit">提交反馈</button> 
+
+
+
+</view>
+</form>
+
+</view>

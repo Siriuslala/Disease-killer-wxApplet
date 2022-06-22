@@ -1,0 +1,30 @@
+<!--pages/info/register.wxml-->
+<view class="content">
+<form bindsubmit="user_register">
+<view class='form'>
+
+<view class='input'>
+    <view>昵称</view>
+    <input name="input_user_name" value='{{input}}' class='input-box' placeholder="请输入昵称"/>
+    <view>学工号</view>
+    <input name="input_user_id" value='{{input}}' class='input-box' placeholder="请输入学工号"/>
+    <view>密码</view>
+    <input name="input_user_code" value='{{input}}' class='input-box' placeholder="请输入密码"/>
+</view>
+
+    <!-- 选择身份 -->
+    <picker mode="selector" bindchange="bindPickerChange" name="user_identity" value="{{index}}" range="{{array}}" range-key ="identity">
+            <view class="weui-select">
+            请选择身份(学生/医生)：{{array[index].indentity}}
+            </view>
+     </picker>
+
+   
+
+<!-- 提交按钮 -->
+<button class='button' formType="submit">注册</button> 
+
+</view>
+</form>
+</view>
+

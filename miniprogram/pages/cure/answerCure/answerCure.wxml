@@ -1,0 +1,21 @@
+<!--pages/answerCure.wxml-->
+<!-- 这是医生看到的界面。
+如何实现学生在学生端点击上传的同时，医生端同步从数据库获取信息，并展示在医生端界面？
+学生点击按钮的事件，应当与医生端wxml绑定。对于医生端的展现形式，我想在医生端同步生成一个按钮 -->
+<!-- 懂了懂了，数据渲染 wx:for !!! -->
+
+<view class='input'>
+<text>待阅读的问诊单数量：{{length}}</text>
+</view>
+<!-- 循环渲染 -->
+<view wx:for="{{data}}"   wx:for-item='stu' >
+    <button bindtap="gogiveCure" data-id="{{stu.stu_id}}"> 
+                 <!-- data-id实现将wxml中的数据传入js文件 -->
+                                学号：{{stu.stu_id}}
+                                姓名：{{stu.stuName}} 
+                                性别：{{stu.stuGender}} 
+                                年龄：{{stu.stuAge}}
+                                病情描述：{{stu.stuWords}}
+                                </button>
+</view>
+

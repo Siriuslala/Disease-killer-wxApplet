@@ -1,0 +1,16 @@
+/* pages/info/feedback.wxss */
+.content{
+    border:1px black solid;
+    margin: 10px;
+    font-size: 10pt;
+    padding: 2%;
+  }
+  /* 多行输入 */
+  textarea{
+    border: 1px rgb(7, 7, 7) solid;
+    margin: auto;
+    width:85%;
+    height: 70px;
+    margin-top:5px;
+    padding: 10px;
+  }

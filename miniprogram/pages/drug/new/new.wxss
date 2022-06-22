@@ -1,0 +1,24 @@
+/* pages/xinjian/xinjian.wxss */
+.input{
+    
+  width:85%; /*class为input的组件宽度为父组件的宽度的85%*/
+  
+  }
+  
+  .input-box{
+  width: 280px;
+  border: 1px solid black;  /*给class为input-box的组件加上边框，边框宽度为1px，边框样式为实线，边框颜色为黑色。*/
+  }
+
+  .button{
+    margin-bottom: 15px;
+    background-color: rgb(42, 212, 108)   /*class为button的组件背景颜色为黄绿色*/ 
+    }
+    
+/* 多行输入 */
+    .content{
+        border:1px black solid;
+        margin: 10px;
+        font-size: 10pt;
+        padding: 2%;
+      }

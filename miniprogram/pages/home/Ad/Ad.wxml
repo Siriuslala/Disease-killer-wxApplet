@@ -1,0 +1,5 @@
+<!--pages/home/Ad.wxml-->
+<view class="content">
+<!-- 使用富文本编辑，相应数据库内用html写 -->
+<rich-text nodes = "{{adContent}}"></rich-text>
+</view>

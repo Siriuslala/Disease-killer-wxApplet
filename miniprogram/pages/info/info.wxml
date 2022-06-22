@@ -1,0 +1,4 @@
+<!--pages/info.wxml-->
+<button  disabled="{{feedback_button_state}}" bindtap="go_feedback">用户反馈</button>
+<button bindtap="go_user">用户登录</button>
+<button disabled="{{cart_button_state}}"  bindtap="go_cart">用户订单</button>

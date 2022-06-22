@@ -1,0 +1,7 @@
+<!--pages/xitong/xitong.wxml-->
+
+<view class="button"><button bindtap='go_find' 
+disabled="{{find_button_state}}">查询</button></view>
+<view class="button"><button bindtap='go_new' 
+disabled="{{new_button_state}}">新建</button></view>
+

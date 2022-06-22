@@ -1,0 +1,10 @@
+<!--pages/home/health.wxml-->
+
+<!-- 循环渲染 -->
+<view wx:for="{{data}}"   wx:for-item='health' >
+    <button bindtap="goshowhealth" data-id="{{health}}"> 
+                 <!-- data-id实现将wxml中的数据传入js文件 -->
+                                {{health}}
+                                </button>
+</view>
+

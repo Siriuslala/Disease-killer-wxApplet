@@ -1,0 +1,7 @@
+/* pages/info.wxss */
+button {
+    margin-top: 10px; 
+    background-color: rgb(16, 206, 158);
+    text-align: center;
+    width: 90%;
+}

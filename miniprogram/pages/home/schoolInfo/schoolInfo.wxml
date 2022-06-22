@@ -1,0 +1,8 @@
+<!--pages/home/schoolInfo.wxml-->
+<!-- 循环渲染 -->
+<view wx:for="{{data}}"   wx:for-item='date' >
+    <button bindtap="goshow_schoolInfo" data-id="{{date}}"> 
+                 <!-- data-id实现将wxml中的数据传入js文件 -->
+                                {{date}}
+                                </button>
+</view>
